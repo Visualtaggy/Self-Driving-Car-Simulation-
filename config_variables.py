@@ -13,6 +13,8 @@ BAD_GENOME_TRESHOLD = 200
 INPUT_NEURONS = 9
 OUTPUT_NEURONS = 4
 
+NEURON_DBG = False
+
 # =================== Car Specs ==================================
 
 CAR_DBG = False
