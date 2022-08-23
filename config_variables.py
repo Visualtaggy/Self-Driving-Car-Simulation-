@@ -1,8 +1,8 @@
 import pygame as py
-py.font.init()
 
+py.font.init()
 py.display.set_caption('AI 2DTrackMania - Vishal Tyagi')
-# =================== General constants ==================================
+
 FPS = 30
 WIN_WIDTH = 500
 WIN_HEIGHT = 800
@@ -15,7 +15,6 @@ OUTPUT_NEURONS = 4
 
 NEURON_DBG = False
 
-# =================== Car Specs ==================================
 
 CAR_DBG = False
 FRICTION = -0.1
@@ -27,7 +26,6 @@ TURN_VEL = 2
 SENSOR_DISTANCE = 200
 ACTIVATION_TRESHOLD = 0.5
 
-# =================== Road Specs ==================================
 
 ROAD_DBG = False
 MAX_ANGLE = 1
@@ -37,7 +35,6 @@ NUM_POINTS = 15
 SAFE_SPACE = SPACING + 50
 ROAD_WIDTH = 200
 
-# =================== Display and Colors ==================================
 
 NODE_RADIUS = 20
 NODE_SPACING = 5
@@ -66,10 +63,8 @@ NODE_FONT = py.font.SysFont("roboto", 15)
 STAT_FONT = py.font.SysFont("roboto", 50)
 
 
-# =================== Constants for internal use ==================================
 GEN = 0
 
-# enumerations
 ACC = 0
 BRAKE = 1
 TURN_LEFT = 2
