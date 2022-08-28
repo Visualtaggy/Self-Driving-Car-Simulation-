@@ -20,10 +20,11 @@ def draw_win(cars, road, world, GEN):
     for car in cars:
         car.draw(world)
 
-    #text = STAT_FONT.render("Reward: "+str(int(world.getScore())), 1, BLACK)
-    #world.win.blit(text, (world.win_width-text.get_width() - 10, 10))
-    #text = STAT_FONT.render("Gen: "+str(GEN), 1, BLACK)
-    #world.win.blit(text, (world.win_width-text.get_width() - 10, 50))
+    if SCORE_DBG:
+        text = STAT_FONT.render("Reward: "+str(int(world.getScore())), 1, WHITE)
+        world.win.blit(text, (world.win_width-text.get_width() - 10, 10))
+        text = STAT_FONT.render("Gen: "+str(GEN), 1, WHITE)
+        world.win.blit(text, (world.win_width-text.get_width() - 10, 50))
     if NEURON_DBG:
         world.bestNN.draw(world)
 
