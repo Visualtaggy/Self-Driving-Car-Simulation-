@@ -109,13 +109,13 @@ class Road:
                 p = self.pointsLeft[i]
                 f = self.pointsLeft[next_index]
                 if p.y >= f.y:
-                    py.draw.line(world.win, BLACK, world.getScreenCoords(
+                    py.draw.line(world.win, WHITE, world.getScreenCoords(
                         p.x, p.y), world.getScreenCoords(f.x, f.y), 4)
 
                 p = self.pointsRight[i]
                 f = self.pointsRight[next_index]
                 if p.y >= f.y:
-                    py.draw.line(world.win, BLACK, world.getScreenCoords(
+                    py.draw.line(world.win, WHITE, world.getScreenCoords(
                         p.x, p.y), world.getScreenCoords(f.x, f.y), 4)
 
 

@@ -12,7 +12,7 @@ py.font.init()
 
 
 bg = py.Surface((WIN_WIDTH, WIN_HEIGHT))
-bg.fill(WHITE)
+bg.fill(BLACK)
 
 
 def draw_win(cars, road, world, GEN):
